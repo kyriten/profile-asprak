@@ -5,198 +5,364 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil Asisten Praktikum</title>
 
+    <!-- Load an icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header class="navbar">
       <!-- Logo -->
       <div class="logo">
         <img
-          src="img/logo.png"
+          src="assets/images/logo.png"
           alt="logo"
           onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false"
         />
       </div>
     </header>
+    <!-- Mobile -->
+    <nav class="navbar-mobile">
+      <!-- Right as Navbar Menu -->
+      <ul class="mobile-menu">
+        <li>
+          <a href="index.html" class="active mobile-links"
+            ><i data-feather="home"></i><span>Home</span></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/ossastra/"
+            class="active mobile-links"
+            ><i data-feather="instagram"></i><span>IG</span></a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/kyriten" class="mobile-links"
+            ><i data-feather="github"></i><span>GitHub</span></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/abimanyu-okysaputra/"
+            class="mobile-links"
+            ><i data-feather="linkedin"></i><span>LinkedIn</span></a
+          >
+        </li>
+        <li>
+          <a href="https://wa.me/6281294797215" class="mobile-links"
+            ><i data-feather="message-circle"></i><span>WA</span></a
+          >
+        </li>
+      </ul>
+    </nav>
 
     <main class="container">
-        <!-- Content -->
-        <div class="content">
-          <span class="creator-title">CREATOR DETAIL</span>
-          <article class="creator-detail">
-            <div class="creator-img">
-              <img
-                src="img/me.jpg"
-                alt="profile"
-                width="50%"
-                height="50%"
+      <!-- Content -->
+      <div class="content">
+        <span class="creator-title">MY PROFILE</span>
+        <article class="creator-detail">
+          <div class="creator-img">
+            <img
+              src="assets/images/me.jpg"
+              alt="profile"
+              width="50%"
+              height="50%"
+              style="
+                border-radius: 50%;
+                border: 1px solid #3ca0f1;
+                border-width: 2px;
+                padding: 2px;
+              "
+            />
+          </div>
+          <h1>Abimanyu Okysaputra Rachman</h1>
+          <p>1 semester lagi S.Kom. Aamiin</p>
+          <hr />
+
+          <!-- Learning Status -->
+          <table>
+            <span class="status status-green"> LEARNING STATUS </span>
+            <tr style="text-align: left">
+              <th
                 style="
-                  border-radius: 50%;
-                  border: 1px solid #3ca0f1;
-                  border-width: 2px;
-                  padding: 2px;
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 10px;
                 "
-              />
-            </div>
-            <h1>Abimanyu Okysaputra Rachman</h1>
-            <p>1 semester lagi S.Kom. Aamiin</p>
-            <hr />
-  
-            <!-- Learning Status -->
-            <table>
-              <span class="status status-green"> LEARNING STATUS </span>
-              <tr style="text-align: left">
-                <th
-                  style="
-                    display: inline-flex;
-                    align-items: center;
-                    margin-top: 10px;
-                  "
-                >
-                  <img
-                    src="img/logo-unpak.ico"
-                    alt="logo-unpak"
-                    width="50px"
-                    style="padding-right: 10px"
-                  />
-                  <h4 style="font-weight: bold">Universitas Pakuan</h4>
-                </th>
-              </tr>
-              <tr style="text-align: left">
-                <th
-                  style="
-                    display: inline-flex;
-                    align-items: center;
-                    margin-top: 10px;
-                  "
-                >
-                  <img
-                    src="img/bangkit.ico"
-                    alt="logo-unpak"
-                    width="50px"
-                    style="padding-right: 10px"
-                  />
-                  <h4 style="font-weight: bold">Bangkit 2023 H2</h4>
-                </th>
-              </tr>
-            </table>
-  
-            <!-- Tech Stack Status -->
-            <table>
-              <span class="status status-orange"> TECH STACK STATUS </span>
-              <tr style="text-align: left">
-                <th
-                  style="
-                    display: inline-flex;
-                    align-items: center;
-                    margin-top: 5px;
-                  "
-                >
-                  <img
-                    src="assets/html-96.ico"
-                    alt="logo-unpak"
-                    width="50px"
-                    style="padding-right: 10px"
-                  />
-                  <h4 style="font-weight: bold">HTML5</h4>
-                </th>
-              </tr>
-              <tr style="text-align: left">
-                <th
-                  style="
-                    display: inline-flex;
-                    align-items: center;
-                    margin-top: 5px;
-                  "
-                >
-                  <img
-                    src="assets/css-96.ico"
-                    alt="logo-unpak"
-                    width="50px"
-                    style="padding-right: 10px"
-                  />
-                  <h4 style="font-weight: bold">CSS3</h4>
-                </th>
-              </tr>
-  
-              <tr style="text-align: left">
-                <th
-                  style="
-                    display: inline-flex;
-                    align-items: center;
-                    margin-top: 5px;
-                  "
-                >
-                  <img
-                    src="assets/javascript-96.ico"
-                    alt="logo-unpak"
-                    width="50px"
-                    style="padding-right: 10px"
-                  />
-                  <h4 style="font-weight: bold">Vanilla Javascript</h4>
-                </th>
-              </tr>
-            </table>
-  
-            <!-- Gear -->
-            <table>
-              <span class="status status-red"> GEAR </span>
-              <tr style="text-align: left">
-                <th
-                  style="
-                    display: inline-flex;
-                    align-items: center;
-                    margin-top: 5px;
-                  "
-                >
-                  <img
-                    src="assets/amd-96.ico"
-                    alt="logo-unpak"
-                    width="50px"
-                    style="padding-right: 10px"
-                  />
-                  <h4 style="font-weight: bold">AMD Ryzen 3 2000G</h4>
-                </th>
-              </tr>
-  
-              <tr style="text-align: left">
-                <th
-                  style="
-                    display: inline-flex;
-                    align-items: center;
-                    margin-top: 5px;
-                  "
-                >
-                  <img
-                    src="assets/memory-slot-96.ico"
-                    alt="logo-unpak"
-                    width="50px"
-                    style="padding-right: 10px"
-                  />
-                  <h4 style="font-weight: bold">RAM 16GB</h4>
-                </th>
-              </tr>
-  
-              <tr style="text-align: left">
-                <th
-                  style="
-                    display: inline-flex;
-                    align-items: center;
-                    margin-top: 5px;
-                  "
-                >
-                  <img
-                    src="assets/ssd-96.ico"
-                    alt="logo-unpak"
-                    width="50px"
-                    style="padding-right: 10px"
-                  />
-                  <h4 style="font-weight: bold">SSD 128GB + 1TB + 500GB</h4>
-                </th>
-              </tr>
-            </table>
-          </article>
-        </div>
+              >
+                <img
+                  src="assets/images/logo-unpak.ico"
+                  alt="logo-unpak"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">Universitas Pakuan</h4>
+              </th>
+            </tr>
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 10px;
+                "
+              >
+                <img
+                  src="assets/images/bangkit.ico"
+                  alt="bangkit"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">Bangkit 2023 H2</h4>
+              </th>
+            </tr>
+          </table>
+
+          <!-- Tech Stack Status -->
+          <table>
+            <span class="status status-orange"> TECH STACK STATUS </span>
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/html-96.ico"
+                  alt="html"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">HTML5</h4>
+              </th>
+            </tr>
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/css-96.ico"
+                  alt="css"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">CSS3</h4>
+              </th>
+            </tr>
+
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/javascript-96.ico"
+                  alt="javascript"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">Vanilla Javascript</h4>
+              </th>
+            </tr>
+
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/php-96.ico"
+                  alt="php"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">PHP</h4>
+              </th>
+            </tr>
+
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/laravel-96.ico"
+                  alt="laravel"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">Laravel</h4>
+              </th>
+            </tr>
+
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/mysql-96.ico"
+                  alt="msql"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">Database</h4>
+              </th>
+            </tr>
+
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/tailwind-css-96.ico"
+                  alt="tailwindcss"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">TailwindCSS</h4>
+              </th>
+            </tr>
+
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/c-96.ico"
+                  alt="c++"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">C++</h4>
+              </th>
+            </tr>
+
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/python-96.ico"
+                  alt="python"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">Python</h4>
+              </th>
+            </tr>
+          </table>
+
+          <!-- Gear -->
+          <table>
+            <span class="status status-red"> GEAR </span>
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/amd-96.ico"
+                  alt="cpu"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">AMD Ryzen 3 2200G</h4>
+              </th>
+            </tr>
+
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/memory-slot-96.ico"
+                  alt="ram"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">RAM 16GB</h4>
+              </th>
+            </tr>
+
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/ssd-96.ico"
+                  alt="ssd"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">SSD 128GB + 1TB + 500GB</h4>
+              </th>
+            </tr>
+          </table>
+        </article>
+      </div>
+    </main>
+
+    <footer>&copy; 2023, Profile Asprak by Kyriten</footer>
+
+    <script>
+      feather.replace();
+
+      document.querySelector(".nav-item").focus();
+    </script>
   </body>
 </html>
