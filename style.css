@@ -9,22 +9,21 @@ body {
   margin: 0;
 }
 
-.container {
-  display: block;
-  width: 50%;
-  padding: 2rem;
-  margin-inline: 0 auto;
-}
-
-.content {
-  flex: 3;
+main.container {
   width: 80%;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Logo */
 .logo img {
   width: 35px;
   user-select: none;
+}
+
+/* Utility */
+.mb-2 {
+  margin-bottom: 30px;
 }
 
 /*  ======================================
@@ -122,6 +121,7 @@ span.creator-title {
 }
 
 span.creator-title-desktop {
+  justify-content: space-around;
   font-size: 18px;
   font-weight: 500;
   padding: 3px 10px;
@@ -130,16 +130,38 @@ span.creator-title-desktop {
   border-radius: 0px 10px 10px 0px;
 }
 
-.creator-detail {
-  margin-top: 26px;
+article.creator-detail {
   display: block;
+  padding-top: 10px;
   text-align: center;
 }
 
+article.creator-status {
+  width: 100%;
+}
+
+.content {
+  flex: 2;
+  padding-left: 45px;
+}
+
+.general-profile {
+  flex: 1;
+  padding-right: 45px;
+}
+
+.creator-img {
+  max-width: 100%;
+}
+
 .creator-img img {
-  border-radius: 50%;
-  width: 25%;
-  height: 25%;
+  border-radius: 100%;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border: 1px solid #3ca0f1;
+  border-width: 5px;
+  padding: 3px;
 }
 
 .status {
@@ -148,7 +170,7 @@ span.creator-title-desktop {
   border-radius: 10px;
   text-align: left;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 10px;
 }
 
@@ -213,7 +235,7 @@ aside.socmed-column {
   background-color: #298fc5;
   color: #ffffff;
   padding: 12px;
-  border-radius: 50%;
+  border-radius: 10%;
   width: 100%;
   margin: 5px 0 5px 0;
 }
@@ -258,14 +280,19 @@ footer {
     right: 0;
   }
 
-  .container {
+  main.container {
     display: block;
+    margin: auto;
     width: 100%;
     padding: 0px 10px;
   }
 
   .social-media {
     display: none;
+  }
+
+  .general-profile {
+    padding: 10px;
   }
 
   .content {
