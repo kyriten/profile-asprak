@@ -121,10 +121,25 @@ span.creator-title {
   border-radius: 0px 10px 10px 0px;
 }
 
+span.creator-title-desktop {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 3px 10px;
+  color: #fff;
+  background-color: #298fc5;
+  border-radius: 0px 10px 10px 0px;
+}
+
 .creator-detail {
   margin-top: 26px;
   display: block;
   text-align: center;
+}
+
+.creator-img img {
+  border-radius: 50%;
+  width: 25%;
+  height: 25%;
 }
 
 .status {
@@ -137,9 +152,19 @@ span.creator-title {
   margin-top: 10px;
 }
 
+.status-red {
+  color: #ffffff;
+  background-color: #d81313;
+}
+
 .status-green {
   color: #fff;
   background-color: #2aa711;
+}
+
+.status-blue {
+  color: #fff;
+  background-color: #298fc5;
 }
 
 .status-orange {
@@ -147,9 +172,9 @@ span.creator-title {
   background-color: #d8d513;
 }
 
-.status-red {
+.status-nila {
   color: #ffffff;
-  background-color: #d81313;
+  background-color: #9d13d8;
 }
 
 table {
@@ -160,6 +185,49 @@ table {
   border: 1px solid #3333333b;
   padding: 0px 5px 5px 5px;
   width: 100%;
+}
+
+/* Social Media */
+aside.socmed-column {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+  top: 30%;
+  right: 10%;
+}
+
+.social-media {
+  list-style-type: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.social-media li {
+  box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.social-media li a i {
+  background-color: #298fc5;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 50%;
+  width: 100%;
+  margin: 5px 0 5px 0;
+}
+
+.social-media li a i:hover {
+  background-color: #bdbdbd;
+}
+
+.vl {
+  border-left: 2px solid #298fc5;
+  border-radius: 5px;
+  text-align: center;
+  left: 50%;
+  height: 30px;
 }
 
 /*  ======================================
@@ -196,15 +264,28 @@ footer {
     padding: 0px 10px;
   }
 
+  .social-media {
+    display: none;
+  }
+
   .content {
     height: fit-content;
     width: 100%;
     padding: 10px;
   }
 
+  span.creator-title-desktop {
+    display: none;
+  }
+
   .creator {
     display: block;
     padding: 10px;
+  }
+
+  .creator-img img {
+    width: 50%;
+    height: 50%;
   }
 
   .card-title {
@@ -223,7 +304,7 @@ footer {
 @media only screen and (min-width: 768px) {
   .container {
     display: flex;
-    width: 80%;
+    width: 50%;
     padding: 2rem 4rem;
     margin-inline: auto;
   }
@@ -242,6 +323,10 @@ footer {
   }
 
   nav.navbar-mobile {
+    display: none;
+  }
+
+  span.creator-title {
     display: none;
   }
 }

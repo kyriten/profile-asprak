@@ -23,6 +23,7 @@
     />
   </head>
   <body>
+    <!-- Header -->
     <header class="navbar">
       <!-- Logo -->
       <div class="logo">
@@ -33,68 +34,78 @@
         />
       </div>
     </header>
-    <!-- Mobile -->
+
+    <!-- Mobile Navigation -->
     <nav class="navbar-mobile">
-      <!-- Right as Navbar Menu -->
       <ul class="mobile-menu">
+        <!-- Home -->
         <li>
           <a href="index.html" class="active mobile-links"
             ><i data-feather="home"></i><span>Home</span></a
           >
         </li>
+
+        <!-- Instagram -->
         <li>
           <a
             href="https://www.instagram.com/ossastra/"
             class="active mobile-links"
-            ><i data-feather="instagram"></i><span>IG</span></a
+            ><i data-feather="instagram"></i><span>ossastra</span></a
           >
         </li>
+
+        <!-- Socmed: Github -->
         <li>
           <a href="https://github.com/kyriten" class="mobile-links"
-            ><i data-feather="github"></i><span>GitHub</span></a
+            ><i data-feather="github"></i><span>kyriten</span></a
           >
         </li>
+
+        <!-- Socmed: LinkedIn -->
         <li>
           <a
             href="https://www.linkedin.com/in/abimanyu-okysaputra/"
             class="mobile-links"
-            ><i data-feather="linkedin"></i><span>LinkedIn</span></a
+            ><i data-feather="linkedin"></i><span>abimanyu</span></a
           >
         </li>
+
+        <!-- Socmed: Whatsapp -->
         <li>
           <a href="https://wa.me/6281294797215" class="mobile-links"
-            ><i data-feather="message-circle"></i><span>WA</span></a
+            ><i data-feather="message-circle"></i><span>abimanyu</span></a
           >
         </li>
       </ul>
     </nav>
 
+    <span class="creator-title">MY PROFILE</span>
     <main class="container">
       <!-- Content -->
       <div class="content">
-        <span class="creator-title">MY PROFILE</span>
+        <span class="creator-title-desktop">MY PROFILE</span>
         <article class="creator-detail">
+          <!-- Profile:Image -->
           <div class="creator-img">
             <img
               src="assets/images/me.jpg"
               alt="profile"
-              width="50%"
-              height="50%"
-              style="
-                border-radius: 50%;
-                border: 1px solid #3ca0f1;
-                border-width: 2px;
-                padding: 2px;
-              "
+              style="border: 1px solid #3ca0f1; border-width: 2px; padding: 2px"
             />
           </div>
+
+          <!-- Profile:Name -->
           <h1>Abimanyu Okysaputra Rachman</h1>
+
+          <!-- Profile:Bio -->
           <p>1 semester lagi S.Kom. Aamiin</p>
           <hr />
 
           <!-- Learning Status -->
           <table>
             <span class="status status-green"> LEARNING STATUS </span>
+
+            <!-- Student:Universitas Pakuan -->
             <tr style="text-align: left">
               <th
                 style="
@@ -112,6 +123,8 @@
                 <h4 style="font-weight: bold">Universitas Pakuan</h4>
               </th>
             </tr>
+
+            <!-- Student:Bangkit 2023 H2 -->
             <tr style="text-align: left">
               <th
                 style="
@@ -131,9 +144,35 @@
             </tr>
           </table>
 
-          <!-- Tech Stack Status -->
+          <!-- Learning Status -->
           <table>
-            <span class="status status-orange"> TECH STACK STATUS </span>
+            <span class="status status-blue"> Favorite Activity </span>
+
+            <!-- Favorite Activity -->
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 10px;
+                "
+              >
+                <img
+                  src="assets/images/code-96.ico"
+                  alt="coding"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">Coding</h4>
+              </th>
+            </tr>
+          </table>
+
+          <!-- Tech Stack -->
+          <table>
+            <span class="status status-orange"> TECH STACK </span>
+
+            <!-- Lang:HTML -->
             <tr style="text-align: left">
               <th
                 style="
@@ -151,6 +190,8 @@
                 <h4 style="font-weight: bold">HTML5</h4>
               </th>
             </tr>
+
+            <!-- Lang:CSS -->
             <tr style="text-align: left">
               <th
                 style="
@@ -169,6 +210,7 @@
               </th>
             </tr>
 
+            <!-- Lang:JS -->
             <tr style="text-align: left">
               <th
                 style="
@@ -187,6 +229,7 @@
               </th>
             </tr>
 
+            <!-- Lang:PHP -->
             <tr style="text-align: left">
               <th
                 style="
@@ -205,60 +248,7 @@
               </th>
             </tr>
 
-            <tr style="text-align: left">
-              <th
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  margin-top: 5px;
-                "
-              >
-                <img
-                  src="assets/images/laravel-96.ico"
-                  alt="laravel"
-                  width="50px"
-                  style="padding-right: 10px"
-                />
-                <h4 style="font-weight: bold">Laravel</h4>
-              </th>
-            </tr>
-
-            <tr style="text-align: left">
-              <th
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  margin-top: 5px;
-                "
-              >
-                <img
-                  src="assets/images/mysql-96.ico"
-                  alt="msql"
-                  width="50px"
-                  style="padding-right: 10px"
-                />
-                <h4 style="font-weight: bold">Database</h4>
-              </th>
-            </tr>
-
-            <tr style="text-align: left">
-              <th
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  margin-top: 5px;
-                "
-              >
-                <img
-                  src="assets/images/tailwind-css-96.ico"
-                  alt="tailwindcss"
-                  width="50px"
-                  style="padding-right: 10px"
-                />
-                <h4 style="font-weight: bold">TailwindCSS</h4>
-              </th>
-            </tr>
-
+            <!-- Lang:C++ -->
             <tr style="text-align: left">
               <th
                 style="
@@ -277,6 +267,7 @@
               </th>
             </tr>
 
+            <!-- Lang:Python -->
             <tr style="text-align: left">
               <th
                 style="
@@ -294,11 +285,87 @@
                 <h4 style="font-weight: bold">Python</h4>
               </th>
             </tr>
+
+            <!-- Framework:Laravel -->
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/laravel-96.ico"
+                  alt="laravel"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">Laravel</h4>
+              </th>
+            </tr>
+
+            <!-- Framework:Bootstrap -->
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/bootstrap-96.ico"
+                  alt="bootstrap"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">Bootstrap</h4>
+              </th>
+            </tr>
+
+            <!-- Framework:TailwindCSS -->
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/tailwind-css-96.ico"
+                  alt="tailwindcss"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">TailwindCSS</h4>
+              </th>
+            </tr>
+
+            <!-- DBMS:MySQL -->
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/mysql-96.ico"
+                  alt="mysql"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">MySQL</h4>
+              </th>
+            </tr>
           </table>
 
-          <!-- Gear -->
+          <!-- Home Gear -->
           <table>
-            <span class="status status-red"> GEAR </span>
+            <span class="status status-red"> HOME GEAR </span>
             <tr style="text-align: left">
               <th
                 style="
@@ -331,7 +398,7 @@
                   width="50px"
                   style="padding-right: 10px"
                 />
-                <h4 style="font-weight: bold">RAM 16GB</h4>
+                <h4 style="font-weight: bold">DDR4 16GB</h4>
               </th>
             </tr>
 
@@ -353,8 +420,97 @@
               </th>
             </tr>
           </table>
+
+          <!-- Outdoor Gear -->
+          <table>
+            <span class="status status-nila"> OUTDOOR GEAR </span>
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/intel-96.ico"
+                  alt="cpu"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">Intel Core-i3 1115G4</h4>
+              </th>
+            </tr>
+
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/memory-slot-96.ico"
+                  alt="ram"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">DDR4 8GB</h4>
+              </th>
+            </tr>
+
+            <tr style="text-align: left">
+              <th
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-top: 5px;
+                "
+              >
+                <img
+                  src="assets/images/ssd-96.ico"
+                  alt="ssd"
+                  width="50px"
+                  style="padding-right: 10px"
+                />
+                <h4 style="font-weight: bold">SSD 512GB</h4>
+              </th>
+            </tr>
+          </table>
         </article>
       </div>
+
+      <!-- Social Media -->
+      <aside class="socmed-column">
+        <ul class="social-media">
+          <li>
+            <a href="https://www.instagram.com/ossastra/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <div class="vl"></div>
+          <li>
+            <a href="https://github.com/kyriten" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <div class="vl"></div>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/abimanyu-okysaputra/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <div class="vl"></div>
+          <li>
+            <a href="https://wa.me/6281294797215" target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </li>
+        </ul>
+      </aside>
     </main>
 
     <footer>&copy; 2023, Profile Asprak by Kyriten</footer>
