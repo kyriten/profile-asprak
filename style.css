@@ -26,6 +26,19 @@ main.container {
   margin-bottom: 30px;
 }
 
+.mt-1 {
+  margin-top: 5px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.pl-1 {
+  padding-left: 15px;
+}
+
+
 /*  ======================================
                 HEADER SECTION            
     ======================================  */
@@ -197,6 +210,11 @@ article.creator-status {
 .status-nila {
   color: #ffffff;
   background-color: #9d13d8;
+}
+
+.status-gray {
+  color: #000000;
+  background-color: #b8b8b8;
 }
 
 table {
